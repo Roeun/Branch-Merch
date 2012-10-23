@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1858C8151636982F002FC9A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1858C8141636982F002FC9A9 /* ViewController.m */; };
+		1858C8181636985B002FC9A9 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1858C8171636985B002FC9A9 /* ViewController.xib */; };
 		189D29401636942E00632C29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189D293F1636942E00632C29 /* UIKit.framework */; };
 		189D29421636942E00632C29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189D29411636942E00632C29 /* Foundation.framework */; };
 		189D29441636942E00632C29 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189D29431636942E00632C29 /* CoreGraphics.framework */; };
@@ -16,11 +18,12 @@
 		189D29521636942E00632C29 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D29511636942E00632C29 /* Default.png */; };
 		189D29541636942E00632C29 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D29531636942E00632C29 /* Default@2x.png */; };
 		189D29561636942E00632C29 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D29551636942E00632C29 /* Default-568h@2x.png */; };
-		189D29591636942E00632C29 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D29581636942E00632C29 /* ViewController.m */; };
-		189D295C1636942E00632C29 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189D295A1636942E00632C29 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1858C8131636982F002FC9A9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1858C8141636982F002FC9A9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1858C8171636985B002FC9A9 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		189D293B1636942E00632C29 /* BranchMerch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BranchMerch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189D293F1636942E00632C29 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		189D29411636942E00632C29 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -34,9 +37,6 @@
 		189D29511636942E00632C29 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		189D29531636942E00632C29 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		189D29551636942E00632C29 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		189D29571636942E00632C29 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		189D29581636942E00632C29 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		189D295B1636942E00632C29 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +53,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1858C8121636982F002FC9A9 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				1858C8131636982F002FC9A9 /* ViewController.h */,
+				1858C8141636982F002FC9A9 /* ViewController.m */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		1858C8161636985B002FC9A9 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				1858C8171636985B002FC9A9 /* ViewController.xib */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
 		189D29301636942E00632C29 = {
 			isa = PBXGroup;
 			children = (
@@ -83,11 +100,10 @@
 		189D29451636942E00632C29 /* BranchMerch */ = {
 			isa = PBXGroup;
 			children = (
+				1858C8161636985B002FC9A9 /* ui */,
+				1858C8121636982F002FC9A9 /* viewcontroller */,
 				189D294E1636942E00632C29 /* AppDelegate.h */,
 				189D294F1636942E00632C29 /* AppDelegate.m */,
-				189D29571636942E00632C29 /* ViewController.h */,
-				189D29581636942E00632C29 /* ViewController.m */,
-				189D295A1636942E00632C29 /* ViewController.xib */,
 				189D29461636942E00632C29 /* Supporting Files */,
 			);
 			path = BranchMerch;
@@ -162,7 +178,7 @@
 				189D29521636942E00632C29 /* Default.png in Resources */,
 				189D29541636942E00632C29 /* Default@2x.png in Resources */,
 				189D29561636942E00632C29 /* Default-568h@2x.png in Resources */,
-				189D295C1636942E00632C29 /* ViewController.xib in Resources */,
+				1858C8181636985B002FC9A9 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +191,7 @@
 			files = (
 				189D294C1636942E00632C29 /* main.m in Sources */,
 				189D29501636942E00632C29 /* AppDelegate.m in Sources */,
-				189D29591636942E00632C29 /* ViewController.m in Sources */,
+				1858C8151636982F002FC9A9 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +204,6 @@
 				189D29491636942E00632C29 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		189D295A1636942E00632C29 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				189D295B1636942E00632C29 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -291,6 +299,7 @@
 				189D29611636942E00632C29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
